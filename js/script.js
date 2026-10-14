@@ -157,3 +157,10 @@
   // Evitar que enlaces sociales ficticios salten de forma brusca.
   $$('a[href="#"]').forEach(link => link.addEventListener('click', event => event.preventDefault()));
 })();
+const boton = document.getElementById("btnConocer");
+const mensaje = document.getElementById("mensaje");
+
+boton.addEventListener("click", function () {
+    mensaje.hidden = false;
+    boton.textContent = "¡Gracias por visitarnos!";
+});
